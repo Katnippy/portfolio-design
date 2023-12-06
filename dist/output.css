@@ -574,11 +574,28 @@ video {
   }
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.grid {
+  display: grid;
 }
 
-.font-bold {
-  font-weight: 700;
+.h-full {
+  height: 100%;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.grid-rows-\[1fr_5fr\] {
+  grid-template-rows: 1fr 5fr;
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
