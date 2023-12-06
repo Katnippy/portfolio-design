@@ -8,11 +8,23 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/37642d0e7b.js" crossorigin="anonymous"></script> 
 </head>
 <body>
-  <div id="container" class="grid grid-rows-[1fr_5fr] min-h-screen">
+  <div id="container" 
+    class="grid grid-rows-[1fr_5fr] md:grid-rows-[1fr_4fr] min-h-screen">
     <section id="banner">
-      <div id="banner" class="bg-black text-white h-full font-banner">Banner</div>
+      <div id="banner" 
+        class="bg-black text-white h-full flex flex-col justify-center items-center">
+        <div id="banner-text" class="font-banner text-4xl md:text-5xl mb-1 md:mb-2">
+          My Portfolio
+        </div>
+        <div id="banner-github-logo" class="mt-1 md:mt-2">
+          <a href="https://github.com/Katnippy">
+            <i class="fa-brands fa-github text-5xl md:text-6xl"></i>
+          </a>
+        </div>
+      </div>
     </section>
     <section id="content">
       <div id="content font-content">Content</div>
