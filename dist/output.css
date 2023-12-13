@@ -922,12 +922,68 @@ video {
     margin-top: 0.5rem;
   }
 
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:grid {
+    display: grid;
+  }
+
+  .md\:flex-1 {
+    flex: 1 1 0%;
+  }
+
+  .md\:auto-cols-auto {
+    grid-auto-columns: auto;
+  }
+
+  .md\:auto-rows-auto {
+    grid-auto-rows: auto;
+  }
+
+  .md\:auto-rows-min {
+    grid-auto-rows: min-content;
+  }
+
+  .md\:auto-rows-max {
+    grid-auto-rows: max-content;
+  }
+
+  .md\:auto-rows-fr {
+    grid-auto-rows: minmax(0, 1fr);
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:grid-rows-\[1fr_8fr\] {
     grid-template-rows: 1fr 8fr;
   }
 
-  .md\:grid-rows-\[2fr_7fr\] {
-    grid-template-rows: 2fr 7fr;
+  .md\:grid-rows-\[1fr_6fr\] {
+    grid-template-rows: 1fr 6fr;
+  }
+
+  .md\:grid-rows-\[1fr_4fr\] {
+    grid-template-rows: 1fr 4fr;
+  }
+
+  .md\:items-start {
+    align-items: flex-start;
+  }
+
+  .md\:self-stretch {
+    align-self: stretch;
+  }
+
+  .md\:self-baseline {
+    align-self: baseline;
   }
 
   .md\:text-5xl {
@@ -938,40 +994,6 @@ video {
   .md\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:mb-20 {
-    margin-bottom: 5rem;
-  }
-
-  .xl\:flex {
-    display: flex;
-  }
-
-  .xl\:h-full {
-    height: 100%;
-  }
-
-  .xl\:min-h-screen {
-    min-height: 100vh;
-  }
-
-  .xl\:flex-1 {
-    flex: 1 1 0%;
-  }
-
-  .xl\:grid-rows-\[2fr_7fr\] {
-    grid-template-rows: 2fr 7fr;
-  }
-
-  .xl\:flex-wrap {
-    flex-wrap: wrap;
-  }
-
-  .xl\:items-center {
-    align-items: center;
   }
 }
 
@@ -1000,9 +1022,8 @@ video {
     height: 100%;
   }
 
-  .\32xl\:h-min {
-    height: -moz-min-content;
-    height: min-content;
+  .\32xl\:h-auto {
+    height: auto;
   }
 
   .\32xl\:max-h-screen {
@@ -1033,7 +1054,7 @@ video {
     align-items: stretch;
   }
 
-  .\32xl\:overflow-y-scroll {
-    overflow-y: scroll;
+  .\32xl\:self-stretch {
+    align-self: stretch;
   }
 }

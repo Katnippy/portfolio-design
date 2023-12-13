@@ -14,7 +14,7 @@
   <!-- min-h-screen -->
   <!-- 2xl:max-h-screen -->
   <div id="container" 
-    class="bg-gray-50 grid grid-rows-[1fr_11fr] md:grid-rows-[1fr_8fr] 2xl:grid-rows-[2fr_7fr] 2xl:min-h-screen">
+    class="bg-gray-50 grid grid-rows-[1fr_11fr] md:grid-rows-[1fr_4fr] 2xl:grid-rows-[2fr_7fr] 2xl:min-h-screen">
     <section id="banner-section">
       <div id="banner" 
         class="bg-black text-white h-full flex flex-col items-center justify-center">
@@ -30,9 +30,9 @@
     </section>
     <section id="content-section">
       <div id="content" class="2xl:h-full">
-        <div id="cards" class="font-content 2xl:flex 2xl:flex-wrap 2xl:items-center 2xl:h-full">
-          <div class="card min-w-screen max-w-96 md:mx-6 2xl:flex-1 2xl:mb-20">
-            <div class="flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl">
+        <div id="cards" class="font-content md:grid md:grid-cols-2 2xl:flex 2xl:items-center 2xl:h-full">
+          <div class="card min-w-screen max-w-96 md:flex md:mx-6 2xl:flex-1 2xl:mb-20">
+            <div class="flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl md:flex-1">
               <div 
                 class="mx-4 mt-4 overflow-hidden text-gray-700 bg-white shadow-lg bg-clip-border rounded-xl h-40">
                 <img src="images/yellow-penguins.png"
@@ -53,7 +53,7 @@
                   </div>
                 </div>
                 <p class="block text-base antialiased font-light leading-relaxed text-inherit">
-                  A Node.js phonebook web app, combining a React frontend with 
+                  A RESTful phonebook web app, combining a React frontend with 
                   an Express backend.
                 </p>
               </div>
@@ -67,8 +67,8 @@
               </div>
             </div>
           </div>
-          <div class="card min-w-screen max-w-96 md:mx-6 2xl:flex-1 2xl:mb-20">
-            <div class="flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl">
+          <div class="card min-w-screen max-w-96 md:flex md:mx-6 2xl:flex-1 2xl:mb-20">
+            <div class="flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl md:flex-1">
               <div 
                 class="mx-4 mt-4 overflow-hidden text-gray-700 bg-white shadow-lg bg-clip-border rounded-xl h-40">
                 <img src="images/penguinwatch.png"
@@ -104,8 +104,8 @@
               </div>
             </div>
           </div>
-          <div class="card min-w-screen max-w-96 md:mx-6 2xl:flex-1 2xl:mb-20">
-            <div class="flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl">
+          <div class="card min-w-screen max-w-96 md:flex md:mx-6 2xl:flex-1 2xl:mb-20">
+            <div class="flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl md:flex-1">
               <div 
                 class="mx-4 mt-4 overflow-hidden text-gray-700 bg-white shadow-lg bg-clip-border rounded-xl h-40">
                 <img src="images/plotly-penguins.png"
@@ -127,7 +127,7 @@
                   </div>
                 </div>
                 <p class="block text-base antialiased font-light leading-relaxed text-inherit">
-                  An interactive statistical analysis on the <a href="https://www.kaggle.com/datasets/parulpandey/palmer-archipelago-antarctica-penguin-data" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">
+                  Interactive statistical analyses on the <a href="https://www.kaggle.com/datasets/parulpandey/palmer-archipelago-antarctica-penguin-data" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">
                   palmerpenguins</a> dataset in Plotly Dash.
                 </p>
               </div>
@@ -141,8 +141,8 @@
               </div>
             </div>
           </div>
-          <div class="card min-w-screen max-w-96 md:mx-6 2xl:flex-1 2xl:mb-20 2xl-overflow-y-auto">
-            <div class="flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl">
+          <div class="card min-w-screen max-w-96 md:flex md:mx-6 2xl:flex-1 2xl:mb-20">
+            <div class="flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl md:flex-1">
               <div 
                 class="mx-4 mt-4 overflow-hidden text-gray-700 bg-white shadow-lg bg-clip-border rounded-xl h-40">
                 <img src="images/this-website.jpg"
@@ -161,8 +161,8 @@
                   </div>
                 </div>
                 <p class="block text-base antialiased font-light leading-relaxed text-inherit">
-                  A responsive portfolio designed with Tailwind and projects
-                  hosted on Render / for download.
+                  A responsive portfolio with projects hosted or available for 
+                  download, designed with Tailwind.
                 </p>
               </div>
               <div class="p-6 pt-0">
