@@ -574,23 +574,9 @@ video {
   }
 }
 
-.relative {
-  position: relative;
-}
-
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
-}
-
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.mx-6 {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
 }
 
 .mb-1 {
@@ -641,68 +627,6 @@ video {
   min-height: 100vh;
 }
 
-.w-96 {
-  width: 24rem;
-}
-
-.w-screen {
-  width: 100vw;
-}
-
-.w-10 {
-  width: 2.5rem;
-}
-
-.w-6\/12 {
-  width: 50%;
-}
-
-.w-12 {
-  width: 3rem;
-}
-
-.w-full {
-  width: 100%;
-}
-
-.w-max {
-  width: -moz-max-content;
-  width: max-content;
-}
-
-.w-11\/12 {
-  width: 91.666667%;
-}
-
-.w-auto {
-  width: auto;
-}
-
-.w-80 {
-  width: 20rem;
-}
-
-.min-w-fit {
-  min-width: -moz-fit-content;
-  min-width: fit-content;
-}
-
-.min-w-full {
-  min-width: 100%;
-}
-
-.min-w-0 {
-  min-width: 0px;
-}
-
-.max-w-screen-sm {
-  max-width: 640px;
-}
-
-.shrink {
-  flex-shrink: 1;
-}
-
 .cursor-default {
   cursor: default;
 }
@@ -711,28 +635,8 @@ video {
   grid-template-rows: 1fr 11fr;
 }
 
-.grid-rows-\[1fr_10fr\] {
-  grid-template-rows: 1fr 10fr;
-}
-
-.grid-rows-\[1fr_12fr\] {
-  grid-template-rows: 1fr 12fr;
-}
-
-.grid-rows-\[1fr_13fr\] {
-  grid-template-rows: 1fr 13fr;
-}
-
-.grid-rows-\[1fr_14fr\] {
-  grid-template-rows: 1fr 14fr;
-}
-
 .flex-col {
   flex-direction: column;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
 }
 
 .items-center {
@@ -749,18 +653,6 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
-}
-
-.overflow-x-auto {
-  overflow-x: auto;
-}
-
-.overflow-y-auto {
-  overflow-y: auto;
-}
-
-.overflow-x-hidden {
-  overflow-x: hidden;
 }
 
 .rounded-lg {
@@ -814,6 +706,11 @@ video {
 .bg-\[\#66cc33\] {
   --tw-bg-opacity: 1;
   background-color: rgb(102 204 51 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#7b12f8\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(123 18 248 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#e52b50\] {
@@ -891,6 +788,10 @@ video {
 
 .pt-0 {
   padding-top: 0px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .font-banner {
@@ -1007,30 +908,7 @@ video {
   }
 }
 
-@media (min-width: 640px) {
-  .sm\:w-screen {
-    width: 100vw;
-  }
-
-  .sm\:w-auto {
-    width: auto;
-  }
-
-  .sm\:max-w-screen-sm {
-    max-width: 640px;
-  }
-
-  .sm\:grid-rows-\[1fr_11fr\] {
-    grid-template-rows: 1fr 11fr;
-  }
-}
-
 @media (min-width: 768px) {
-  .md\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .md\:mx-6 {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
@@ -1044,20 +922,12 @@ video {
     margin-top: 0.5rem;
   }
 
-  .md\:grid-rows-\[1fr_9fr\] {
-    grid-template-rows: 1fr 9fr;
-  }
-
-  .md\:grid-rows-\[1fr_10fr\] {
-    grid-template-rows: 1fr 10fr;
-  }
-
   .md\:grid-rows-\[1fr_8fr\] {
     grid-template-rows: 1fr 8fr;
   }
 
-  .md\:grid-rows-\[1fr_7fr\] {
-    grid-template-rows: 1fr 7fr;
+  .md\:grid-rows-\[2fr_7fr\] {
+    grid-template-rows: 2fr 7fr;
   }
 
   .md\:text-5xl {
@@ -1068,5 +938,102 @@ video {
   .md\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:mb-20 {
+    margin-bottom: 5rem;
+  }
+
+  .xl\:flex {
+    display: flex;
+  }
+
+  .xl\:h-full {
+    height: 100%;
+  }
+
+  .xl\:min-h-screen {
+    min-height: 100vh;
+  }
+
+  .xl\:flex-1 {
+    flex: 1 1 0%;
+  }
+
+  .xl\:grid-rows-\[2fr_7fr\] {
+    grid-template-rows: 2fr 7fr;
+  }
+
+  .xl\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .xl\:items-center {
+    align-items: center;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:absolute {
+    position: absolute;
+  }
+
+  .\32xl\:bottom-0 {
+    bottom: 0px;
+  }
+
+  .\32xl\:left-1\/2 {
+    left: 50%;
+  }
+
+  .\32xl\:mb-20 {
+    margin-bottom: 5rem;
+  }
+
+  .\32xl\:flex {
+    display: flex;
+  }
+
+  .\32xl\:h-full {
+    height: 100%;
+  }
+
+  .\32xl\:h-min {
+    height: -moz-min-content;
+    height: min-content;
+  }
+
+  .\32xl\:max-h-screen {
+    max-height: 100vh;
+  }
+
+  .\32xl\:min-h-screen {
+    min-height: 100vh;
+  }
+
+  .\32xl\:flex-1 {
+    flex: 1 1 0%;
+  }
+
+  .\32xl\:grid-rows-\[2fr_7fr\] {
+    grid-template-rows: 2fr 7fr;
+  }
+
+  .\32xl\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .\32xl\:items-center {
+    align-items: center;
+  }
+
+  .\32xl\:items-stretch {
+    align-items: stretch;
+  }
+
+  .\32xl\:overflow-y-scroll {
+    overflow-y: scroll;
   }
 }

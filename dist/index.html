@@ -12,9 +12,10 @@
 </head>
 <body>
   <!-- min-h-screen -->
+  <!-- 2xl:max-h-screen -->
   <div id="container" 
-    class="bg-gray-50 grid grid-rows-[1fr_11fr] md:grid-rows-[1fr_7fr]">
-    <section id="banner">
+    class="bg-gray-50 grid grid-rows-[1fr_11fr] md:grid-rows-[1fr_8fr] 2xl:grid-rows-[2fr_7fr] 2xl:min-h-screen">
+    <section id="banner-section">
       <div id="banner" 
         class="bg-black text-white h-full flex flex-col items-center justify-center">
         <div id="banner-text" class="font-banner text-4xl md:text-5xl mb-1 md:mb-2">
@@ -27,151 +28,155 @@
         </div>
       </div>
     </section>
-    <section id="content">
-      <div id="cards" class="font-content">
-        <div class="card min-w-screen max-w-96 md:mx-6">
-          <div class="flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl">
-            <div 
-              class="mx-4 mt-4 overflow-hidden text-gray-700 bg-white shadow-lg bg-clip-border rounded-xl h-40">
-              <img src="images/yellow-penguins.png"
-                alt="..."/>
-            </div>
-            <div class="p-6">
-              <div class="flex justify-between">
-                <h5 class="block mb-2 text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-                  Yellow Penguins
-                </h5>
-                <div class="mt-[-8px]">
-                  <a href="...">
-                    <i class="fa-solid fa-circle-play text-4xl"></i>
-                  </a>
-                  <a href="...">
-                    <i class="fa-brands fa-github text-4xl"></i>
-                  </a>
-                </div>
+    <section id="content-section">
+      <div id="content" class="2xl:h-full">
+        <div id="cards" class="font-content 2xl:flex 2xl:flex-wrap 2xl:items-center 2xl:h-full">
+          <div class="card min-w-screen max-w-96 md:mx-6 2xl:flex-1 2xl:mb-20">
+            <div class="flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl">
+              <div 
+                class="mx-4 mt-4 overflow-hidden text-gray-700 bg-white shadow-lg bg-clip-border rounded-xl h-40">
+                <img src="images/yellow-penguins.png"
+                  alt="..."/>
               </div>
-              <p class="block text-base antialiased font-light leading-relaxed text-inherit">
-                A Node.js phonebook web app, combining a React frontend with an 
-                Express backend.
-              </p>
+              <div class="p-6">
+                <div class="flex justify-between">
+                  <h5 class="block mb-2 text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                    Yellow Penguins
+                  </h5>
+                  <div class="mt-[-8px]">
+                    <a href="...">
+                      <i class="fa-solid fa-circle-play text-4xl"></i>
+                    </a>
+                    <a href="...">
+                      <i class="fa-brands fa-github text-4xl"></i>
+                    </a>
+                  </div>
+                </div>
+                <p class="block text-base antialiased font-light leading-relaxed text-inherit">
+                  A Node.js phonebook web app, combining a React frontend with 
+                  an Express backend.
+                </p>
+              </div>
+              <div class="p-6 pt-0">
+                <button class="bg-[#149eca] text-white cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2">React</button>
+                <button class="bg-[#66cc33] text-black cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2">Node.js</button>
+                <button class="bg-[dimgrey] text-white cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2">Express</button>
+                <button class="bg-[#00684a] text-white cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2">MongoDB</button>
+                <button class="bg-[lightblue] text-black cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2">APIs</button>
+                <button class="bg-[orange] text-black cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2 mt-1">Test-Driven Development</button>
+              </div>
             </div>
-            <div class="p-6 pt-0">
-              <button class="bg-[#149eca] text-white cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2">React</button>
-              <button class="bg-[#66cc33] text-black cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2">Node.js</button>
-              <button class="bg-[dimgrey] text-white cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2">Express</button>
-              <button class="bg-[#00684a] text-white cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2">MongoDB</button>
-              <button class="bg-[lightblue] text-black cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2">APIs</button>
-              <button class="bg-[orange] text-black cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2 mt-1">Test-Driven Development</button>
+          </div>
+          <div class="card min-w-screen max-w-96 md:mx-6 2xl:flex-1 2xl:mb-20">
+            <div class="flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl">
+              <div 
+                class="mx-4 mt-4 overflow-hidden text-gray-700 bg-white shadow-lg bg-clip-border rounded-xl h-40">
+                <img src="images/penguinwatch.png"
+                  alt="A cropped screenshot of the Penguinwatch app, showing 
+                  that two groups of 220 and 1 penguin(s) were observed at 
+                  Boulders Beach in South Africa."/>
+              </div>
+              <div class="p-6">
+                <div class="flex justify-between">
+                  <h5 class="block mb-2 text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                    Penguinwatch
+                  </h5>
+                  <div class="mt-[-8px]">
+                    <a href="https://github.com/Katnippy/penguinwatch/releases">
+                      <i class="fa-solid fa-circle-down text-4xl"></i>
+                    </a>
+                    <a href="https://github.com/Katnippy/penguinwatch">
+                      <i class="fa-brands fa-github text-4xl"></i>
+                    </a>
+                  </div>
+                </div>
+                <p class="block text-base antialiased font-light leading-relaxed text-inherit">
+                  A C# program which provides an interface for interacting with 
+                  the <a href="https://ebird.org/home" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">
+                  eBird</a> API.
+                </p>
+              </div>
+              <div class="p-6 pt-0">
+                <button class="bg-[#512bd4] text-white cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2">C#</button>
+                <button class="bg-[lightblue] text-black cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2">APIs</button>
+                <button class="bg-[#03358c] text-white cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2">Design Patterns</button>
+                <button class="bg-[orange] text-black cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2 mt-1">Test-Driven Development</button>
+              </div>
+            </div>
+          </div>
+          <div class="card min-w-screen max-w-96 md:mx-6 2xl:flex-1 2xl:mb-20">
+            <div class="flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl">
+              <div 
+                class="mx-4 mt-4 overflow-hidden text-gray-700 bg-white shadow-lg bg-clip-border rounded-xl h-40">
+                <img src="images/plotly-penguins.png"
+                  alt="A cropped screenshot of the Plotly Penguins app, showing 
+                  a multiple regression 3D scattergraph."/>
+              </div>
+              <div class="p-6">
+                <div class="flex justify-between">
+                  <h5 class="block mb-2 text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                    Plotly Penguins
+                  </h5>
+                  <div class="mt-[-8px]">
+                    <a href="https://plotly-penguins.onrender.com/">
+                      <i class="fa-solid fa-circle-play text-4xl"></i>
+                    </a>
+                    <a href="https://github.com/Katnippy/plotly-penguins">
+                      <i class="fa-brands fa-github text-4xl"></i>
+                    </a>
+                  </div>
+                </div>
+                <p class="block text-base antialiased font-light leading-relaxed text-inherit">
+                  An interactive statistical analysis on the <a href="https://www.kaggle.com/datasets/parulpandey/palmer-archipelago-antarctica-penguin-data" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">
+                  palmerpenguins</a> dataset in Plotly Dash.
+                </p>
+              </div>
+              <div class="p-6 pt-0">
+                <button class="bg-[#3776ab] text-[#ffd343] cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2">Python</button>
+                <button class="bg-[#003856] text-white cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2">SQLite</button>
+                <button class="bg-black text-white cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2">Flask</button>
+                <button class="bg-[#f7df1e] text-black cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2">JavaScript</button>
+                <button class="bg-[#7b12f8] text-white cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2">Bootstrap</button>
+                <button class="bg-[#e52b50] text-white cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2 mt-1">Statistics</button>
+              </div>
+            </div>
+          </div>
+          <div class="card min-w-screen max-w-96 md:mx-6 2xl:flex-1 2xl:mb-20 2xl-overflow-y-auto">
+            <div class="flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl">
+              <div 
+                class="mx-4 mt-4 overflow-hidden text-gray-700 bg-white shadow-lg bg-clip-border rounded-xl h-40">
+                <img src="images/this-website.jpg"
+                  alt="A construction worker penguin hard at work, because the 
+                  screenshot that should be here doesn't exist yet."/>
+              </div>
+              <div class="p-6">
+                <div class="flex justify-between">
+                  <h5 class="block mb-2 text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                    This website!
+                  </h5>
+                  <div class="mt-[-8px]">
+                    <a href="https://github.com/Katnippy/portfolio-design">
+                      <i class="fa-brands fa-github text-4xl"></i>
+                    </a>
+                  </div>
+                </div>
+                <p class="block text-base antialiased font-light leading-relaxed text-inherit">
+                  A responsive portfolio designed with Tailwind and projects
+                  hosted on Render / for download.
+                </p>
+              </div>
+              <div class="p-6 pt-0">
+                <button class="bg-[#f06529] text-white cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2">HTML</button>
+                <button class="bg-[#35bef8] text-black cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2">Tailwind</button>
+                <button class="bg-[#46e3b6] text-black cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2">Render</button>
+                <button class="bg-[plum] text-black cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2">Deployment</button>
+                <button class="bg-[tan] text-black cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2 mt-1">Mobile-First Design</button>    
+              </div>
             </div>
           </div>
         </div>
-        <div class="card min-w-screen max-w-96 md:mx-6">
-          <div class="flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl">
-            <div 
-              class="mx-4 mt-4 overflow-hidden text-gray-700 bg-white shadow-lg bg-clip-border rounded-xl h-40">
-              <img src="images/penguinwatch.png"
-                alt="A cropped screenshot of the Penguinwatch app, showing that
-                two groups of 220 and 1 penguin(s) were observed at Boulders 
-                Beach in South Africa."/>
-            </div>
-            <div class="p-6">
-              <div class="flex justify-between">
-                <h5 class="block mb-2 text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-                  Penguinwatch
-                </h5>
-                <div class="mt-[-8px]">
-                  <a href="https://github.com/Katnippy/penguinwatch/releases">
-                    <i class="fa-solid fa-circle-down text-4xl"></i>
-                  </a>
-                  <a href="https://github.com/Katnippy/penguinwatch">
-                    <i class="fa-brands fa-github text-4xl"></i>
-                  </a>
-                </div>
-              </div>
-              <p class="block text-base antialiased font-light leading-relaxed text-inherit">
-                A C# program which provides an interface for interacting with the<a href="https://ebird.org/home" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">
-                eBird</a> API.
-              </p>
-            </div>
-            <div class="p-6 pt-0">
-              <button class="bg-[#512bd4] text-white cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2">C#</button>
-              <button class="bg-[lightblue] text-black cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2">APIs</button>
-              <button class="bg-[#03358c] text-white cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2">Design Patterns</button>
-              <button class="bg-[orange] text-black cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2 mt-1">Test-Driven Development</button>
-            </div>
-          </div>
-        </div>
-        <div class="card min-w-screen max-w-96 md:mx-6">
-          <div class="flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl">
-            <div 
-              class="mx-4 mt-4 overflow-hidden text-gray-700 bg-white shadow-lg bg-clip-border rounded-xl h-40">
-              <img src="images/plotly-penguins.png"
-                alt="A cropped screenshot of the Plotly Penguins app, showing a 
-                multiple regression 3D scattergraph."/>
-            </div>
-            <div class="p-6">
-              <div class="flex justify-between">
-                <h5 class="block mb-2 text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-                  Plotly Penguins
-                </h5>
-                <div class="mt-[-8px]">
-                  <a href="https://plotly-penguins.onrender.com/">
-                    <i class="fa-solid fa-circle-play text-4xl"></i>
-                  </a>
-                  <a href="https://github.com/Katnippy/plotly-penguins">
-                    <i class="fa-brands fa-github text-4xl"></i>
-                  </a>
-                </div>
-              </div>
-              <p class="block text-base antialiased font-light leading-relaxed text-inherit">
-                An interactive statistical analysis on the <a href="https://www.kaggle.com/datasets/parulpandey/palmer-archipelago-antarctica-penguin-data" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">
-                palmerpenguins</a> dataset in Plotly Dash.
-              </p>
-            </div>
-            <div class="p-6 pt-0">
-              <button class="bg-[#3776ab] text-[#ffd343] cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2">Python</button>
-              <button class="bg-[#003856] text-white cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2">SQLite</button>
-              <button class="bg-black text-white cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2">Flask</button>
-              <button class="bg-[#f7df1e] text-black cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2">JavaScript</button>
-              <button class="bg-[#e52b50] text-white cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2 mt-1">Statistics</button>
-            </div>
-          </div>
-        </div>
-        <div class="card min-w-screen max-w-96 md:mx-6">
-          <div class="flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl">
-            <div 
-              class="mx-4 mt-4 overflow-hidden text-gray-700 bg-white shadow-lg bg-clip-border rounded-xl h-40">
-              <img src="images/this-website.jpg"
-                alt="A construction worker penguin hard at work, because the 
-                screenshot that should be here doesn't exist yet."/>
-            </div>
-            <div class="p-6">
-              <div class="flex justify-between">
-                <h5 class="block mb-2 text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-                  This website!
-                </h5>
-                <div class="mt-[-8px]">
-                  <a href="https://github.com/Katnippy/portfolio-design">
-                    <i class="fa-brands fa-github text-4xl"></i>
-                  </a>
-                </div>
-              </div>
-              <p class="block text-base antialiased font-light leading-relaxed text-inherit">
-                A responsive portfolio designed with Tailwind and projects
-                hosted on Render / for download.
-              </p>
-            </div>
-            <div class="p-6 pt-0">
-              <button class="bg-[#f06529] text-white cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2">HTML</button>
-              <button class="bg-[#35bef8] text-black cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2">Tailwind</button>
-              <button class="bg-[#46e3b6] text-black cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2">Render</button>
-              <button class="bg-[plum] text-black cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2">Deployment</button>
-              <button class="bg-[tan] text-black cursor-default rounded-lg shadow-md shadow-gray-900/10 py-1 px-2 mt-1">Mobile-First Design</button>    
-            </div>
-          </div>
-        </div>
+        <div id="footer" class="font-content text-center 2xl:absolute 2xl:bottom-0 2xl:left-1/2">Footer</div>
       </div>
-      <div id="footer" class="font-content">Footer</div>
     </section>
   </div>
 </body>
