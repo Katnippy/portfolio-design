@@ -1018,6 +1018,10 @@ video {
     display: flex;
   }
 
+  .\32xl\:grid {
+    display: grid;
+  }
+
   .\32xl\:h-full {
     height: 100%;
   }
@@ -1026,20 +1030,45 @@ video {
     height: auto;
   }
 
+  .\32xl\:h-screen {
+    height: 100vh;
+  }
+
   .\32xl\:max-h-screen {
     max-height: 100vh;
+  }
+
+  .\32xl\:max-h-full {
+    max-height: 100%;
   }
 
   .\32xl\:min-h-screen {
     min-height: 100vh;
   }
 
+  .\32xl\:min-h-full {
+    min-height: 100%;
+  }
+
+  .\32xl\:min-h-max {
+    min-height: -moz-max-content;
+    min-height: max-content;
+  }
+
   .\32xl\:flex-1 {
     flex: 1 1 0%;
   }
 
+  .\32xl\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .\32xl\:grid-rows-\[2fr_7fr\] {
     grid-template-rows: 2fr 7fr;
+  }
+
+  .\32xl\:flex-col {
+    flex-direction: column;
   }
 
   .\32xl\:flex-wrap {
@@ -1052,6 +1081,18 @@ video {
 
   .\32xl\:items-stretch {
     align-items: stretch;
+  }
+
+  .\32xl\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .\32xl\:justify-center {
+    justify-content: center;
+  }
+
+  .\32xl\:justify-items-center {
+    justify-items: center;
   }
 
   .\32xl\:self-stretch {
