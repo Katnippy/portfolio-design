@@ -906,6 +906,10 @@ video {
   text-decoration-line: underline;
 }
 
+.hover\:opacity-80:hover {
+  opacity: 0.8;
+}
+
 @media (prefers-color-scheme: dark) {
   .dark\:text-blue-500 {
     --tw-text-opacity: 1;
