@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.image-under-construction {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.under-construction {
+  position: absolute;
+  margin-top: 16px;
+}
